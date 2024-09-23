@@ -28,8 +28,8 @@
 </script>
 
 <body>
-   <header>
-    <nav class="flex justify-around bg-bgColor w-[1440px] m-auto pt-6 pb-16 static">
+   <header class="sticky top-0 right-0 left-0">
+    <nav class="flex justify-around bg-bgColor w-[1440px] m-auto pt-6 pb-16">
         <div>
             <button class="w-[110px] h-[49px]  text-xl font-semibold  bg-btnPrimary border rounded-md">Blog</button>
         </div>
@@ -42,31 +42,73 @@
             <span class= "font-semibold">5000 BDT</span>
         </div>
     </nav>
-    <section class="w-[1140px] m-auto gap-4 mt-32 justify-center items-center flex">
+    <section class="w-[1140px] m-auto gap-4 mt-32 justify-center items-center flex sticky top-0 left-0 right-0">
         <button class="py-4 px-8 bg-btnPrimary border rounded-md">Donation</button>
         <button class="py-4 px-8 bg-btnPrimary border rounded-md">History</button>
     </section>
    </header>
 
-   <!-- main section here and card -->
-   <main  class="w-[1140px] m-auto mt-8">
-   <div class="grid grid-cols-2 gap-8">
-     <!-- image side in main -->
-     <div>
-        <img class="w-full h-full" src="./assets/noakhali.png" alt="">
-     </div>
-     <!-- Titale here to card -->
-      <div>
-        <button class="flex bg-moneyBtn border rounded-md justify-center items-center gap-3 p-2 mb-4">
-            <img class="w-6 h-6" src="./assets/coin.png" alt="">
-            <span class= "font-regular text-4">0 BDT</span>
-        </button>
-        <h1 class="mb-4 font-bold text-5">Donate for Flood at Noakhali, Bangladesh</h1>
-        <p class="mb-6 font-light text-4 text-[#777777]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-        <input type="text" placeholder="Type here" class="input input-bordered w-full mb-4" />
-        <button class="w-[124px] h-[25px] bg-btnPrimary" >Donate Now</button>
+   <!-- main section here and card 1 -->
+   <main>
+   <section class="w-[1140px] m-auto mt-8 border rounded-lg p-6">
+    <div class="grid grid-cols-2 gap-8">
+        <!-- image side in main  -->
+        <div>
+           <img class="w-full h-[346px]" src="./assets/noakhali.png" alt="">
+        </div>
+        <!-- Titale here to card -->
+         <div>
+           <button class="flex bg-moneyBtn border rounded-md justify-center items-center gap-3 p-2 mb-4">
+               <img class="w-6 h-6" src="./assets/coin.png" alt="">
+               <span class= "font-regular text-4 font-bold text-4 text-black">0 BDT</span>
+           </button>
+           <h1 class="mb-4 font-bold text-5">Donate for Flood at Noakhali,Bangladesh</h1>
+           <p class="mb-6 font-light text-4 text-[#777777]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+           <input type="text" placeholder="Type here" class="input input-bordered w-full mb-4" />
+           <button class="bg-btnPrimary py-2 w-full rounded-md font-bold text-4">Donate Now</button>
+         </div>
       </div>
-   </div>
+   </section>
+   <!-- section card 2 -->
+   <section class="w-[1140px] m-auto mt-8 border rounded-lg p-6">
+    <div class="grid grid-cols-2 gap-8">
+        <!-- image side in main  -->
+        <div>
+           <img class="w-full h-[346px]" src="./assets/feni.png" alt="">
+        </div>
+        <!-- Titale here to card -->
+         <div>
+           <button class="flex bg-moneyBtn border rounded-md justify-center items-center gap-3 p-2 mb-4">
+               <img class="w-6 h-6" src="./assets/coin.png" alt="">
+               <span class= "font-regular text-4 font-bold text-4 text-black">0 BDT</span>
+           </button>
+           <h1 class="mb-4 font-bold text-5">Donate for Flood at Feni,Bangladesh</h1>
+           <p class="mb-6 font-light text-4 text-[#777777]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+           <input type="text" placeholder="Type here" class="input input-bordered w-full mb-4" />
+           <button class="bg-btnPrimary py-2 w-full rounded-md font-bold text-4">Donate Now</button>
+         </div>
+      </div>
+   </section>
+   <!-- section card 3 donate -->
+   <section class="w-[1140px] m-auto mt-8 border rounded-lg mb-4 p-6">
+    <div class="grid grid-cols-2 gap-8">
+        <!-- image side in main  -->
+        <div>
+           <img class="w-full h-[346px]" src="./assets/quota-protest.png" alt="">
+        </div>
+        <!-- Titale here to card -->
+         <div>
+           <button class="flex bg-moneyBtn border rounded-md justify-center items-center gap-3 p-2 mb-4">
+               <img class="w-6 h-6" src="./assets/coin.png" alt="">
+               <span class= "font-regular text-4 font-bold text-4 text-black">0 BDT</span>
+           </button>
+           <h1 class="mb-4 font-bold text-5">Aid for Injured in the Quota Movement</h1>
+           <p class="mb-6 font-light text-4 text-[#777777]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+           <input type="text" placeholder="Type here" class="input input-bordered w-full mb-4" />
+           <button class="bg-btnPrimary py-2 w-full rounded-md font-bold text-4">Donate Now</button>
+         </div>
+      </div>
+   </section>
    </main>
 </body>
 </html>
