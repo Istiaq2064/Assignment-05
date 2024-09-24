@@ -1,72 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog </title>
-    <!-- DaisyUI  & Tailwind css link  -->
+    <title>Blog</title>
+    <!-- DaisyUI & Tailwind CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    clifford: '#da373d',
-                    btnPrimary: '#B4F461',
-                    bgColor: '#F9F7F3',
-                    bgBody: 'FFFFFF',
-                    moneyBtn:'#F3F3F3'
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        btnPrimary: '#B4F461',
+                        bgColor: '#F9F7F3',
+                        bgBody: 'FFFFFF',
+                        moneyBtn: '#F3F3F3'
+                    }
                 }
             }
         }
-    }
-</script>
+    </script>
 </head>
+
 <body>
-    <section class="flex justify-around">
-        <nav class="flex justify-around bg-bgColor w-[1440px] m-auto pt-6 pb-6">
-           <a href="index.html" target="_self"><button class="w-[110px] h-[49px]  text-xl font-semibold  bg-btnPrimary border rounded-md">Blog</button></a>
+    <section class="flex flex-col md:flex-row justify-around">
+        <nav class="flex justify-around bg-bgColor w-full m-auto p-4 md:w-[1440px]">
+            <a href="index.html" target="_self">
+                <button class="w-[110px] h-[49px] text-xl font-semibold bg-btnPrimary border rounded-md">Blog</button>
+            </a>
             <div class="flex justify-center items-center gap-4">
                 <img class="w-12 h-12" src="./assets/logo.png" alt="">
-                <h1 class="text-xl font-semibold" >Donate Bangladesh</h1>
+                <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
             </div>
             <div class="flex justify-center items-center gap-4">
                 <img class="w-7 h-7" src="./assets/coin.png" alt="">
-                <span class= "font-semibold">5000 BDT</span>
+                <span class="font-semibold">5000 BDT</span>
             </div>
         </nav>
     </section>
-    <section class="w-[1440px] m-auto mt-8">
-        <div class="collapse collapse-arrow bg-base-200">
+
+    <section class="w-full md:w-[1440px] m-auto mt-8 px-4">
+        <div class="collapse collapse-arrow bg-base-200 mb-4">
             <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">What is the DOM in java script?</div>
+            <div class="collapse-title text-xl font-medium">What is the DOM in JavaScript?</div>
             <div class="collapse-content">
                 <input type="text" placeholder="Write your Answer:" class="input input-bordered w-full mb-4" />
             </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200">
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-4">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How do an select an element of DOM</div>
+            <div class="collapse-title text-xl font-medium">How do you select an element of the DOM?</div>
             <div class="collapse-content">
                 <input type="text" placeholder="Write your Answer:" class="input input-bordered w-full mb-4" />
             </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200">
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-4">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">What is event delegation content of the DOM, and why it is useful?</div>
+            <div class="collapse-title text-xl font-medium">What is event delegation in the DOM, and why is it useful?</div>
             <div class="collapse-content">
                 <input type="text" placeholder="Write your Answer:" class="input input-bordered w-full mb-4" />
             </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200">
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-4">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How do an manipulate an element attribute ans style using the DOM? </div>
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and style using the DOM?</div>
             <div class="collapse-content">
                 <input type="text" placeholder="Write your Answer:" class="input input-bordered w-full mb-4" />
             </div>
-          </div>
+        </div>
     </section>
 </body>
+
 </html>
